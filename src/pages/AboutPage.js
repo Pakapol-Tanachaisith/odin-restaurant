@@ -7,12 +7,19 @@ class AboutPage extends Page {
       name: "about",
       create: () => {
         const page = document.createElement("div");
+        page.className = style.page;
 
-        const title = document.createElement("h1");
-        title.textContent = "About Page";
-        title.className = style.title;
+        const info = document.createElement("div");
+        info.className = style.info;
+        info.innerHTML = `
+        <h1 class="${style.title}">Contact Up</h1>
+        <p>We love hearing from our Guests! Let us know how we can help.</p>
+        <br>
+        <p>Tel: 555-555-5554</p>
+        <p>totallyRealEmail@notFake.com</p>
+        `;
 
-        page.append(title);
+        page.append(info);
 
         return page;
       },

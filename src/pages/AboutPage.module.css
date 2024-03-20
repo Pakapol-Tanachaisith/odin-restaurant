@@ -1,3 +1,15 @@
+.page {
+  padding-bottom: 80px;
+}
+
+.info {
+  padding: 54px 0;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
 .title {
-  color: green;
+  font-size: 3rem;
+  font-family: "Sansita Swashed", system-ui;
+  margin-bottom: 24px;
 }
