@@ -8,16 +8,19 @@
 </head>
 
 <body>
-  <header>
-    <p class="logo">Redclaw</p>
+  <header class="container">
+    <div class="logo">
+      <img id="logo" src="assets/images/logo.svg" alt="logo" height="56" width="56">
+      <p>Redclaw</p>
+    </div>
     <nav>
-      <button>Home</button>
-      <button>Menu</button>
-      <button>About</button>
+      <button class="btn btn-outline" data-page-name="home">Home</button>
+      <button class="btn btn-outline" data-page-name="menu">Menu</button>
+      <button class="btn btn-outline" data-page-name="about">About</button>
     </nav>
   </header>
 
-  <div id="content"></div>
+  <div id="content" class="container"></div>
 </body>
 
 </html>

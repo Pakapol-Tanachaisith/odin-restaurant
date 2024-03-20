@@ -1,3 +1,82 @@
-h1 {
-  color: pink;
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sansita+Swashed:wght@300..900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+:root {
+  height: 100%;
+}
+
+:root {
+  --red-500: #ef4444;
+}
+
+body {
+  background-image: url("assets/images/pattern.svg");
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn.btn-outline {
+  background: none;
+  font-size: 16px;
+  border: 1px solid var(--red-500);
+  color: var(--red-500);
+  padding: 8px 15px;
+  border-radius: 3px;
+  transition: all 0.05s linear;
+
+  &:hover {
+    color: white;
+    background-color: var(--red-500);
+    transform: scale(1.25);
+  }
+}
+
+.container {
+  max-width: 1580px;
+  margin: 0 auto;
+  padding: 0 36px;
+}
+
+header.container {
+  background-color: white;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+}
+
+header > .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  img {
+    width: 36px;
+    height: 36px;
+  }
+
+  p {
+    font-family: "Sansita Swashed", system-ui;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--red-500);
+  }
+}
+
+header > nav {
+  margin-left: auto;
+  display: flex;
+  gap: 14px;
 }
