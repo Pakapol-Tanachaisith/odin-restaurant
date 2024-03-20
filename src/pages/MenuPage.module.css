@@ -1,3 +1,57 @@
+.page {
+  padding-bottom: 80px;
+}
+
 .title {
-  color: blue;
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Sansita Swashed", system-ui;
+  margin: 36px 0;
+}
+
+.menu {
+  margin: 0 auto;
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.card {
+  display: flex;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 5px;
+  filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04))
+    drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+
+  .content {
+    padding: 24px;
+
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .desc {
+      margin-top: 8px;
+      color: #6b7280;
+    }
+
+    .price {
+      margin-top: 36px;
+      color: var(--red-500);
+      font-family: "Sansita Swashed", system-ui;
+      font-size: 20px;
+    }
+  }
+
+  img {
+    width: 30%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+
+    border-right: 0;
+  }
 }

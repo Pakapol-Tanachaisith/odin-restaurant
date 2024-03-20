@@ -39,7 +39,7 @@ class App {
     logo.src = Logo;
 
     const defaultPage = this.#pages.find((item) => item.index) || this.pages[0];
-    this.#container.appendChild(defaultPage.create());
+    this.#container.appendChild(new MenuPage().create());
   };
 }
 
