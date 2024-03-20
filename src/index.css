@@ -16,6 +16,7 @@ body,
 
 :root {
   --red-500: #ef4444;
+  --red-600: #dc2626;
 }
 
 body {
@@ -47,14 +48,13 @@ button {
 .container {
   max-width: 1580px;
   margin: 0 auto;
-  padding: 0 36px;
 }
 
 header.container {
   background-color: white;
-  padding-top: 24px;
-  padding-bottom: 24px;
+
   display: flex;
+  padding: 14px 36px;
 }
 
 header > .logo {
